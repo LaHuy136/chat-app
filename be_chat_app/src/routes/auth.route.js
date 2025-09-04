@@ -5,11 +5,11 @@ const { register, login, getUserById, updateUser, verifyEmail, resetPassword, up
 
 router.post('/register', register);
 router.post('/login', login);
-// router.get('/me', authenticateToken, getUserById);
-// router.put('/update', authenticateToken, updateUser);
-// router.get('/verify-email', verifyEmail);
-// router.post('/reset-password', resetPassword);
-// router.post('/update-password', updatePassword);
+router.get('/me', authenticateToken, getUserById);
+router.put('/update', authenticateToken, updateUser);
+router.get('/verify-email', verifyEmail);
+router.post('/reset-password', resetPassword);
+router.post('/update-password', updatePassword);
 router.post('/verify-code', verifyCode);
 router.post('/resend-code', resendCode);
 module.exports = router;

@@ -7,6 +7,8 @@ const app = express();
 
 app.use(express.json());
 app.use('/auth', require('./src/routes/auth.route'));
+app.use('/message', require('./src/routes/message.route'));
+app.use('/conversation', require('./src/routes/conversation.route'));
 
 const PORT = process.env.PORT || 3000;
 
